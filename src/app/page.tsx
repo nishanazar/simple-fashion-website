@@ -1,18 +1,16 @@
 import { IoMdHeart } from "react-icons/io";
 import Button from "./components/Button";
-import Navbar from "./components/Navbar";
-import { FaYoutube } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaSkype } from "react-icons/fa";
+
+import Footer from "./components/Footer"
+
+
 
 export default function Home(){
   return(
       <>
-   <Navbar/>
+   
    <div className="h-[430px] w-full bg-[url('https://cdn.pixabay.com/photo/2017/09/06/14/50/the-fireplace-2721784_1280.jpg')] bg-cover bg-center flex flex-col justify-center px-[130px]">
-  
-  <h1 className="text-white text-4xl font-bold font-serif pb-4">Cool Fashion</h1>
+   <h1 className="text-white text-4xl font-bold font-serif pb-4">Cool Fashion</h1>
   <p className="text-white text-[18px] mr-[20px] pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit <br /> Earum temporibus, eligendi rerum repellat.</p>
   <Button/>
   </div>
@@ -59,36 +57,7 @@ export default function Home(){
   <div className="relative">
   <img className="h-[240px] w-[280px]" src="https://cdn.pixabay.com/photo/2020/07/09/20/37/nutrition-5388710_1280.jpg" alt="drinks" />
   <IoMdHeart className="text-[30px] text-white  absolute bottom-[250px] left-[220px]" /><p className="absolute bottom-[250px] text-black bg-white p-2 text-[14px] left-3">Best Quality</p><h3 className="font-bold text-[20px] mt-[15px]">Juice Drinks</h3><p className="text-[14px]">Nature made another world</p></div></div> </div><p className="font-bold text-center underline mb-[50px]">View All Products</p>
-  <footer >
-  <div className="h-[330px] bg-black flex justify-center gap-14 ">
-  
- <div className="h-[200px]  w-[200px]  mt-[80px]">
-<h2 className="text-gray-500 text-[35px]">Little <span className="text-white">Fashion</span></h2>
-<p className="text-gray-500">Copyright © 2023 Little Fashion</p>
-<p className="text-gray-500">Designed by ♥ Nisha Nazar</p>
-</div>
-<div className=" h-[200px]  w-[200px]  mt-[80px]">
-<h2 className="text-white text-[22px]">Sitemp</h2>
-<ul className="text-gray-500">
-<li>Story</li>
-<li>Privacy policy</li>
-<li>Contact</li>
-</ul>
-</div>
-<div className=" h-[200px]  w-[200px]  mt-[80px]">
-<ul className="text-gray-500">
-<li>Products</li>
-<li>FAQs</li>
-</ul>
-</div>
-<div className=" h-[200px] w-[200px]  mt-[80px]">
-<h2 className="text-white text-[22px]">Social </h2>
-<div className="text-white">
-<FaYoutube /><FaWhatsapp /><FaInstagram /><FaSkype />
-</div>
-</div>
-</div>
-</footer>
+  <Footer/>
  </>
   )
 }
